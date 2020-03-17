@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900&display=swap&subset=cyrillic');
+
+body {
+	font-family: 'Montserrat', sans-serif!important;
+}
+
+.btn {
+	display: block;
+	width: 100%;
+    font-size: 16px;
+    line-height: 46px;
+    font-weight: 500;
+    padding: 0 34px;
+    text-align: center;
+    border: none;
+    box-sizing: border-box;
+    transition: all 0.5s;
+    position: relative;
+    z-index: 2;
+    -ms-border-radius: 23px;
+    border-radius: 2px;
+    color: #fff;
+    background: -webkit-linear-gradient(-225deg, #F6C85E 0%, #FF8779 48%, #F54E7E 100%);
+    background: -moz-linear-gradient(-225deg, #F6C85E 0%, #FF8779 48%, #F54E7E 100%);
+    background: -o-linear-gradient(-225deg, #F6C85E 0%, #FF8779 48%, #F54E7E 100%);
+    background-image: linear-gradient(-225deg, #F6C85E 0%, #FF8779 48%, #F54E7E 100%);
+}
+.btn:hover, .btn:focus {
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+}
+.btn::before {
+    position: absolute;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    left: 0;
+    top: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0;
+    transition: all .5s ease;
+}
+.btn::before{
+    background-image: -webkit-linear-gradient(-225deg, #F54E7E 0%, #FF8779 48%, #F6C85E 100%);
+    background-image: linear-gradient(-225deg, #F54E7E 0%, #FF8779 48%, #F6C85E 100%);
+}
+.btn:hover::before {
+    opacity: 1;
+}
+
+.logo {
+	width: 125px;
+}
+
+.hero {
+	background: url(../img/header-bottom.png) bottom center no-repeat, url(../img/particle-left.png) top left no-repeat, url(../img/particle-right.png) top right no-repeat, #0b0c22;
+    background-size: 100%, auto, auto, auto;
+	color: #fff;
+}
+
+.hero__container .row {
+	min-height: 80vh;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.hero__video {
+ 	background: linear-gradient(180deg,#7a0093,#171a8f);
+ 	border-radius: 10px;
+ 	padding: 7px 7px 0 7px;
+ }
+
+.hero__video video {
+	border-radius: 10px;
+}
+
+.hero__title {
+	font-size: 45px;
+	font-weight: 900;
+	margin-bottom: 30px;
+}
+
+.register-now {
+	border: 2px solid #fff;
+	padding: 5px;
+	position: relative;
+	right: 10px;
+}
+
+.register-now__label {
+	padding-right: 50px;
+	padding-left: 5px;
+}
+
+.register-now__count {
+	position: absolute;
+	right: -25px;
+	top: -6px;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 15px;
+	padding-top: 20px;
+	text-align: center;
+	border-radius: 200px;
+	width: 70px;
+	height: 70px;
+	background: linear-gradient(-225deg, #F6C85E 0%, #FF8779 48%, #F54E7E 100%);
+}
+
+.register-now__under {
+	font-size: 11px;
+	font-weight: 400;
+}
+
+@media (max-width: 399px) {
+	.hero__title {
+		font-size: 40px;
+	}
+	.hero__container .row {
+		min-height: unset;
+	}
+	.hero__video {
+		margin-top: 20px;
+	}
+}
+
+.polygon {
+	background-color: #0d112e;
+	min-height: 350px;
+	position: relative;
+}
+
+.form-control {
+	height: 46px;
+	padding: 6px 12px;
+	background-color: transparent;
+	letter-spacing: 0.5px;
+	border: 2px solid rgb(85, 85, 204);
+	border-radius: 2px;
+	background-color: rgb(37,37,142);
+	border-radius: 4px;
+	margin-bottom: 15px;
+	color: #fff;
+}
+
+.form-control:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+.particles-js-canvas-el {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%!important;
+	height: 100%!important;
+}
+
+.contact-form {
+	position: relative;
+	z-index: 10;
+	padding: 20px 10px;
+	border: 2px solid #fff;
+	border-radius: 12px;
+	background-color: rgba(0,0,0, .15);
+}
+
+input.form-control::-webkit-input-placeholder { /* Edge */
+  color: #e5e5e5;
+  font-size: 14px;
+}
+
+input.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #e5e5e5;
+  font-size: 14px;
+}
+
+input.form-control::placeholder {
+  color: #e5e5e5;
+  font-size: 14px;
+}
+
+.icon-box svg {
+	width: 95px;
+}
+
+.icon-box__title {
+	position: relative;
+	font-size: 18px;
+	font-weight: 600;
+	color: #fff;
+	margin-top: 15px;
+}
+
+.icon-box__title:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: -8px;
+	width: 40px;
+	height: 3px;
+	background-color: #F54E7E;
+}
+
+.form-response {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0, .8);
+	color: #fff;
+	font-size: 30px;
+	font-weight: 600;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	z-index: 99;
+}
+
+.iti__selected-dial-code {
+	color: #fff;
+}
+
+.iti {
+	margin-bottom: 15px;
+}
+.leadFormContainer {}
+
+.leadFormContainer .leadForm {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-size: 1em;
+      max-width: 756px
+}
+
+.leadFormContainer .FormHeaderDiv {
+      text-align: center;
+      display: none
+}
+
+.leadFormContainer .FormHeader {
+      margin: auto;
+      text-transform: uppercase;
+      color: #000;
+      font-size: 1.12em;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 700
+}
+
+.leadFormContainer .commonDivs {
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 5px;
+      padding-top: 9px;
+      position: relative;
+      /*width: 260px;*/
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 400;
+      font-size: 1em;
+      color: #d58945
+}
+
+.leadFormContainer .fnameDiv {}
+
+.leadFormContainer .lnameDiv {}
+
+.leadFormContainer .countryDiv {
+      position: relative
+}
+
+.leadFormContainer .phoneDiv {}
+
+.leadFormContainer .emailDiv {}
+
+.leadFormContainer .submitDiv {
+      margin-top: 5%
+}
+
+.leadFormContainer .helpLinkDiv {
+      margin-top: 10px;
+      width: 100%;
+      text-align: center
+}
+
+.leadFormContainer .errMessageDiv {
+      display: none;
+      position: relative;
+      height: 12px
+}
+
+.leadFormContainer .commonLabels {
+      position: absolute;
+      font-size: 16px;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 400;
+      color: #fff;
+      top: 15px;
+      left: 15px;
+      transition: 0.5s;
+      cursor: text
+}
+
+.leadFormContainer .labelFname {}
+
+.leadFormContainer .labelLname {}
+
+.leadFormContainer .labelCountry {}
+
+.leadFormContainer .labelPhone {}
+
+.leadFormContainer .labelEmail {}
+
+.leadFormContainer .labelActive {
+      top: 2px;
+      left: 10px;
+      font-size: 14px;
+      transition: 0.5s;
+      display: none
+}
+
+.leadFormContainer .commonInput {
+      padding-top: 5px;
+      border-top: none !important;
+      border-left: none !important;
+      border-right: none !important;
+      border-bottom: 1px solid #fff;
+      width: 100%;
+      height: 35px;
+      font-size: 16px;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 400;
+      color: #fff;
+      background: transparent;
+      white-space: nowrap;
+      overflow: hidden;
+      line-height: 35px;
+      height: 35px;
+      text-indent: 15px;
+      outline: none;
+      -webkit-appearance: none;
+      -webkit-border-radius: 0px
+}
+
+.leadFormContainer .fnameInput {
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: 20px;
+      background-position-x: 10px
+}
+
+.leadFormContainer .lnameInput {
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: 20px;
+      background-position-x: 10px
+}
+
+.leadFormContainer .countryInput {
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: 20px;
+      background-position-x: 10px
+}
+
+.leadFormContainer .emailInput {
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: 20px;
+      background-position-x: 10px
+}
+
+.labelPhone+.phoneCountryInput {
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: 20px;
+      background-position-x: 10px
+}
+
+.labelPhone.labelActive+.phoneCountryInput {
+      background-image: none;
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: 20px;
+      background-position-x: 10px
+}
+
+.leadFormContainer .phoneCountryInput:focus {
+      background-image: none
+}
+
+.leadFormContainer .fnameInput:focus {
+      border-bottom-color: #fff
+}
+
+.leadFormContainer .fnameInput:focus {}
+
+.leadFormContainer .lnameInput:focus {
+      border-bottom-color: #fff
+}
+
+.leadFormContainer .countryInput:focus {
+      border-bottom-color: #fff
+}
+
+.leadFormContainer .phoneCountryInput {
+      width: 26%;
+      cursor: not-allowed;
+      text-indent: 10px
+}
+
+.leadFormContainer .phoneInput {
+      width: 74%;
+      margin-left: -2%;
+      text-indent: 10px
+}
+
+.leadFormContainer .emailInput:focus {
+      border-bottom-color: #fff
+}
+
+.leadFormContainer .submitButton {
+      width: 100%;
+      height: 55px;
+      border: 0px;
+      color: #111;
+      background-color: #fff;
+      border-radius: 30px;
+      font-size: 1em;
+      /* font-family: 'GothaProMed'; */
+      font-weight: 700;
+      cursor: pointer;
+      -webkit-appearance: none;
+      -webkit-border-radius: 10px;
+      font-size: 22px
+}
+
+.leadFormContainer .submitButton:hover {
+      border: 2px solid #111
+}
+
+.leadFormContainer .submitButton:active {}
+
+.leadFormContainer .helpLink {
+      font-size: 0.75em;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 400;
+      display: none
+}
+
+.leadFormContainer .spanErrMessage {
+      color: #e64044;
+      font-size: 12px;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 400;
+      position: relative
+}
+
+.leadFormContainer .liveSearch {
+      position: absolute;
+      padding-left: 10px;
+      background-color: #f8f8f8;
+      z-index: 3;
+      width: 100%;
+      width: -moz-available;
+      width: -webkit-fill-available;
+      height: 200%;
+      overflow: auto;
+      border: 1px solid #aaa
+}
+
+.leadFormContainer .country {
+      margin-top: 10px;
+      color: #000
+}
+
+.leadFormContainer .country:hover {
+      background-color: #e7e7e7;
+      cursor: pointer
+}
+
+.leadFormContainer #livesearch {}
+
+.leadFormContainer .emailInput {}
+
+.leadFormContainer .submitButton {}
+
+.leadFormContainer .errorInput {
+      border-bottom-color: #f00
+}
+
+.leadFormContainer .rightInput {
+      border-bottom-color: #00a0ce
+}
